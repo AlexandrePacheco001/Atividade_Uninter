@@ -1,0 +1,20 @@
+<h1>{{titulo}}</h1>
+<!--Tabela exibida em HTML-->
+<table  class="table table-striped">
+  <thead>
+  <tr>
+    <td>Nome</td>
+    <td>RU</td>
+    <td>Curso</td>
+    <td>Data Nascimento</td>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let iten of registro">
+    <td>{{iten.nome}}</td>
+    <td>{{iten.ru}}</td>
+    <td>{{iten.curso}}</td>
+    <td>{{iten.datanascimento}}</td>
+  </tr>
+  </tbody>
+</table>
